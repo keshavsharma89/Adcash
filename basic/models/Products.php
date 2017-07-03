@@ -34,6 +34,7 @@ class Products extends \yii\db\ActiveRecord
             [['Price'], 'number'],
             [['Created_date'], 'safe'],
             [['Product'], 'string', 'max' => 225],
+            [['Product'], 'unique'],
         ];
     }
 
