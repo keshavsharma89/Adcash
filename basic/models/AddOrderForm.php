@@ -27,7 +27,7 @@ class AddOrderForm extends Model
         return [
             // all the 3 feilds are required
             [['user', 'product', 'quantity'], 'required'],
-            [['quantity'], 'integer'],
+            [['user', 'product', 'quantity'], 'integer', 'min'=>1],
         ];
     }
 
